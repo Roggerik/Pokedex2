@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+
+.ContainerModal{
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: relative;
+  animation: slideFromTop 0.5s ease-in-out;
+
+}
+
+@keyframes slideFromTop {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+
+.ContainerHeader{
+  width: 360px;
+  height: 307px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+/*Muestra el color de fondo segun el tipo de pokemon*/
+.ContainerImagenInfo{
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+}
+
+.ContainerImagenInfonormal::after,
+.ContainerImagenInfofire::after,
+.ContainerImagenInfowater::after,
+.ContainerImagenInfograss::after,
+.ContainerImagenInfoelectric::after,
+.ContainerImagenInfoice::after,
+.ContainerImagenInfofighting::after,
+.ContainerImagenInfopoison::after,
+.ContainerImagenInfoground::after,
+.ContainerImagenInfoflying::after,
+.ContainerImagenInfopsychic::after,
+.ContainerImagenInfobug::after,
+.ContainerImagenInforock::after,
+.ContainerImagenInfoghost::after,
+.ContainerImagenInfosteel::after,
+.ContainerImagenInfofairy::after,
+.ContainerImagenInfodragon::after,
+.ContainerImagenInfodark::after{
+  content: "";
+  position: absolute;
+  border-radius: 500%;
+  width: 498px;
+  height: 498px;
+  left: -63px;
+  top: -227px;
+  z-index: -10;
+}
+
+.ContainerImagenInfowater::after {
+  background: var(--color-Redondo-Water);
+}
+
+.ContainerImagenInfofire::after {
+  background: var(--color-Redondo-Fire);
+}
+
+.ContainerImagenInfograss::after {
+  background: var(--color-Redondo-Grass);
+}
+
+.ContainerImagenInfoelectric::after {
+  background: var(--color-Redondo-Electric);
+}
+
+.ContainerImagenInfoice::after {
+  background: var(--color-Redondo-Ice);
+}
+
+.ContainerImagenInfofighting::after {
+  background: var(--color-Redondo-Fighting);
+}
+
+.ContainerImagenInfopoison::after {
+  background: var(--color-Redondo-Poison);
+}
+
+.ContainerImagenInfoground::after {
+  background: var(--color-Redondo-Ground);
+}
+
+.ContainerImagenInfoflying::after {
+  background: var(--color-Redondo-Flying);
+}
+
+.ContainerImagenInfopsychic::after {
+  background: var(--color-Redondo-Psychic);
+}
+
+.ContainerImagenInfobug::after {
+  background: var(--color-Redondo-Bug);
+}
+
+.ContainerImagenInforock::after {
+  background: var(--color-Redondo-Rock);
+}
+
+.ContainerImagenInfoghost::after {
+  background: var(--color-Redondo-Ghost);
+}
+
+.ContainerImagenInfosteel::after {
+  background: var(--color-Redondo-Steel);
+}
+
+.ContainerImagenInfofairy::after {
+  background: var(--color-Redondo-Fairy);
+}
+
+.ContainerImagenInfonormal::after {
+  background: var(--color-Redondo-Normal);
+}
+
+.ContainerImagenInfodragon::after {
+  background: var(--color-Redondo-Dragon);
+}
+
+.ContainerImagenInfodark::after {
+  background: var(--color-Redondo-Dark);
+}
+
+
+.MainModal{
+  width: 100%;
+  max-width: 370px;
+  margin: 0 auto 20px;
+}
+
+.ModalIconfire,
+.ModalIcongrass{
+  width: 204px;
+  height: 204px;
+  position: absolute;
+  margin: 0 auto;
+  z-index:0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.ModalIconfire{
+  background: url('../assets/Img/FondoTipos/FondoFire.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  }
+
+  .ModalIcongrass{
+    background: url('../assets/Img/FondoTipos/FondoGrass.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    }
+  
+
+.datosModal{
+  width: 100%;
+  padding:  0px 20px;
+}
+
+.nameModal{
+  font-size: 1.5rem;
+}
+
+.IdModal{
+  font-size: 0.8rem;
+}
+
+.detailsModal{
+  width: 98%;
+  height: 225px;
+  
+}
+
+.detailsModal section{
+  display: flex;
+  justify-content: space-between;
+}
+
+.ImagenModal{
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%,-30%);
+}
+
+.GrupoDatos{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.tituloGrupoDatos{
+  display: flex;
+  gap: 8px;
+  color: var(--color-black-60);
+}
+
+.tituloGrupoDatos p{
+  font-size: 0.75rem;
+}
+
+.Cantidad{
+  width: 152px;
+  height: 41px;
+  border: 1px solid var(--color-black-10);
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.Cantidad span{
+  font-size: 18px;
+  color: var(--color-black-90);
+}
+
+.BtnHeader{
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 50;
+  cursor: pointer;
+}
+.BtnArrowPrevius{
+  width: 100%;
+  height: 100%;
+  
+}
+
+

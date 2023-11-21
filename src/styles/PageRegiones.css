@@ -1,0 +1,51 @@
+.ContainerPageRegiones{
+  width: 98%;
+  height: 90%;
+  margin: 20px auto 0;
+  overflow-y: scroll;
+  text-align: center;
+  animation: slideFromRight 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+@keyframes slideFromRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+.ContainerPageRegiones .TitleRegiones{
+  width: 100%;
+  height: 30px;
+  margin: 20px 0;
+  top: 0;
+  background-color: white;
+  z-index: 1;
+} 
+
+.containerListRegiones{
+  width: 100%;
+  height: auto;
+  display: flex;
+  overflow-y: auto;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/*
+{
+  animation: slideFromRight 0.5s ease-in-out;
+}
+
+@keyframes slideFromRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+*/

@@ -1,0 +1,70 @@
+.ContainerCard{
+  width: 100%;
+  max-width: 328px;
+  height: 102px;
+  position: relative;
+  margin: 0 auto;
+}
+.ContainerCardPokemon{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.ContainerCard:hover{
+  background-color: rgba(0, 0, 0, 0.047);
+}
+
+.ContainerCardDatos{
+  padding-left: 1rem;
+  padding-top: 0.75rem
+}
+
+.IdPokemon{
+  font-weight: 700;
+  color: var(--color-black-60);
+}
+
+.NombrePokemon{
+  font-size: 1.5rem;
+  color: var(--color-black-60);
+}
+
+.ContainerCardImagen{
+  width: 126px;
+  height: 102px;
+  border-radius: 1rem;
+  position: relative;
+}
+
+.ImgPokemon{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 10;
+}
+
+.ConTainerFavorito{
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  z-index: 5;
+
+}
+
+.tipoPokemon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}

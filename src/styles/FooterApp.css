@@ -1,0 +1,32 @@
+.ContainerFooter{
+  width: 100%;
+  height: 72px;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  z-index: 500;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(225, 221, 221);
+  
+}
+
+.ContainerIconFooter{
+
+  width: 3.5rem;
+  height: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#IconActive{
+  width: 2.75rem;
+  height: 2.75rem;
+}
+
+.IconInactiveFooter{
+  width: 1.5rem;
+  height: 1.5rem;
+}
